@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body {
+    font-family: 'roboto';
+    margin: 0;
+    padding: 0;
+}
+
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
+    background-color: #fff;
+    z-index: 1000;
+    
+   
+  }
+
+  .header ul{
+    font-size: 1.1vw;
+  }
+
+  .header a{
+    text-decoration: none;
+    color: #201F1F;
+  }
+
+  .header li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 50px;
+  }
+
+  .footer{
+    bottom: 0;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  font-size: 12px;
+  padding: 0px;
+  margin-top: 60px;
+  }
+
+  footer{
+    height: 60px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid lightgrey;
+  }
+
+  .site_title{
+    margin-left: 35px;
+    font-family: 'roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2vw;
+    line-height: 56px;
+    color: #201F1F;
+  }
+  .wrapper{
+    max-width: 1240px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+a {
+    color: #7c9ab7;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+
+
+p {
+    margin: 10px 0;
+}
+
+form {
+    margin: 15vh auto;
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    padding: 30px;
+}
+
+.auth_form{
+  margin: 30vh auto;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    border: unset;
+    border-bottom: 2px solid #e3e3e3;
+    outline: none;
+    width: 30vw;
+}
+
+button {
+    padding: 10px;
+    background: #e3e3e3;
+    border: unset;
+    cursor: pointer;
+}
+
+.error {
+    border-bottom: 2px solid #ff4332;
+}
+
+.msg {
+    border: 2px solid #ffa908;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.none {
+    display: none;
+}
+
+.logout {
+    color: #b7625c;
+}
+
+/* Форум */
+.authed_as{
+  margin-top: 120px;
+}
+.profile{
+  background: url('../images/profile_bg.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 55%;
+  background-size: 1250px 655px;
+  background-attachment: fixed;
+}
+
+.cat_links{
+    display: block;
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #000;
+    margin-bottom: 5px;
+    background-color: #ccc;
+    color: #000;
+    width: 50vw;
+    margin: 10px auto;
+  }
+  
+  .cat_links:hover{
+    background-color: #ddd;
+  }
+
+  .change_category{
+    display: block;
+    position: absolute;
+    margin-left: 62vw;
+    margin-top: -5vh;
+    
+  }
+
+  .categories_change{
+    display: inline-block;
+    font-size: 12px;
+    margin-left: 55vw;
+    margin-top: -5vh;
+    margin-right: 50px;
+  }
+
+  .categories_del{
+    display: block;
+    margin-left: 65vw;
+    margin-top: -2.5vh;
+    font-size: 12px;
+   
+  }
+
+  .post_content{
+    width: 20vw;
+  }
+  .post_reply{
+    width: 25vw;
+  }
+  .reply{
+    width: 30vw;
+  }
+  .post_reply_user_form{
+    height: 300px;
+  }
+  .post_del{
+    float: right;
+  }
+
+  /* Лайки */
+
+.likes {
+  position: absolute;
+  left: 15%;
+  
+}
+.likes_form{
+  float: left;
+  margin-top: 5px;
+  width: 200px;
+  box-shadow: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+
+.like_button, .dislike_button{
+  font-size: 40px;
+  background-color: #fff;
+  
+  
+}
+
+.like_button{
+  margin-left: 50px;
+  width: 50px;
+  color: rgba(218, 213, 213);
+  text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+  
+}
+.like_button:hover{
+  cursor: pointer;
+  color: rgba(19, 10, 1, 0.74);
+}
+
+.dislike_button{
+  margin-left: 10px;
+  width: 50px;
+  color: rgba(19, 10, 1, 0.74);
+  
+}
+.dislike_button:hover{
+  cursor: pointer;
+  color: rgba(218, 213, 213);
+  text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+
+
+@keyframes fave-heart {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -2800px 0;
+  }
+}
+
+@keyframes unfave-heart {
+  0% {
+    background-position: -2800px 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
